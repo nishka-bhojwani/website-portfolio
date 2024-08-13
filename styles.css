@@ -1,27 +1,32 @@
 /* General Body Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #121212;
+    background-color: #1a1919;
     color: #f0f0f0;
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Ensure all elements respect padding and borders */
 }
 
-/* Container for Flexbox Layout */
-.container {
+/* Header Container with Background Image */
+.header-container {
+    background-image: url('1.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Covering 70% of the viewport height */
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-/* Header Styles */
-header {
-    padding: 20px;
+    align-items: center; /* Aligning items to the center vertically */
+    justify-content: center; /* Centering the content horizontally */
     text-align: center;
-    background-color: #1f1f1f;
+    position: relative; /* Prevent overlap with other elements */
 }
 
-/* Typing Effect for Heading */
+header {
+    color: white;
+    max-width: 80%; /* Limit the width of the header for better alignment */
+    z-index: 2; /* Ensure header stays above other content */
+}
+
 .typing {
     font-size: 2em;
     overflow: hidden;
@@ -37,7 +42,7 @@ header {
         width: 0;
     }
     to {
-        width: 32%; /* Adjust width as needed */
+        width: 40%; /* Adjust width as needed */
     }
 }
 
@@ -53,12 +58,13 @@ header {
 
 /* Main Content Styles */
 main {
-    flex: 1;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 2; /* Ensure main content stays above background */
 }
 
 /* Section Styles */
@@ -69,6 +75,7 @@ section {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 2;
 }
 
 /* Heading Styles */
@@ -123,22 +130,4 @@ a:hover {
 .button:hover {
     background-color: #b48de5; /* Slightly darker pastel purple */
     transform: scale(1.05);
-}
-
-/* Footer Styles */
-footer {
-    background-color: #1f1f1f;
-    padding: 10px;
-    text-align: center;
-}
-
-/* Navigation Styles */
-nav a {
-    color: #ffffff;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
 }
