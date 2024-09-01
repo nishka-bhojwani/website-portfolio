@@ -1,7 +1,7 @@
 /* General Body Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #1a1919;
+    background-color: #040404;
     color: #f0f0f0;
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
 
 /* Header Container with Background Image */
 .header-container {
-    background-image: url('background_new.png');
+    background-image: url('jupiter.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh; /* Covering 70% of the viewport height */
@@ -71,19 +71,19 @@ main {
 section {
     margin-bottom: 20px;
     width: 80%;
-    background: linear-gradient(145deg, #2a2a2a, #383838);
+    background: #2a2b57;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px  rgb(94,100,136);
     z-index: 2;
 }
 
 /* Heading Styles */
 h2 {
-    color: #f5b074; /* Pastel blue */
+    color: #5c5de1; /* Pastel blue */
     font-size: 2em;
     font-weight: 600;
-    border-bottom: 2px solid #f5b074; /* Pastel blue */
+    border-bottom: 2px solid #5c5de1; /* Pastel blue */
     padding-bottom: 10px;
     margin-bottom: 10px;
     text-shadow: 0 0 4px rgba(142, 202, 230, 0.3); /* Decreased glow effect */
